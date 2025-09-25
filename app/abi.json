@@ -5,6 +5,11 @@
           "internalType": "string",
           "name": "_content",
           "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "_tag",
+          "type": "string"
         }
       ],
       "name": "createNote",
@@ -40,6 +45,47 @@
               "internalType": "uint256",
               "name": "timestamp",
               "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "tag",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct Note[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_keyword",
+          "type": "string"
+        }
+      ],
+      "name": "searchNotes",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "content",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "tag",
+              "type": "string"
             }
           ],
           "internalType": "struct Note[]",
@@ -61,40 +107,16 @@
           "internalType": "string",
           "name": "_newContent",
           "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "_newTag",
+          "type": "string"
         }
       ],
       "name": "updateNote",
       "outputs": [],
       "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "inputs": [
-        {
-          "internalType": "address",
-          "name": "",
-          "type": "address"
-        },
-        {
-          "internalType": "uint256",
-          "name": "",
-          "type": "uint256"
-        }
-      ],
-      "name": "userNotes",
-      "outputs": [
-        {
-          "internalType": "string",
-          "name": "content",
-          "type": "string"
-        },
-        {
-          "internalType": "uint256",
-          "name": "timestamp",
-          "type": "uint256"
-        }
-      ],
-      "stateMutability": "view",
       "type": "function"
     }
   ]
