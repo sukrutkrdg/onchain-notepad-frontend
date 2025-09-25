@@ -1,0 +1,27 @@
+{
+  "name": "onchain-notepad-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.90.2",
+    "connectkit": "^1.9.1",
+    "next": "15.5.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "viem": "^2.37.8",
+    "wagmi": "^2.17.4"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.4",
+    "tailwindcss": "^4"
+  }
+}
